@@ -46,7 +46,9 @@ According to  Beeler et al., the value of PI is given by:
 
 ![Capture](https://user-images.githubusercontent.com/75233364/101364514-a9e67700-38c8-11eb-9b6d-581a7556ed62.PNG)
 
-During the iteration of the 
-***k***
- loop, the code is essentially computing the digits of the given expression. 
- 
+During the iteration of the ***k*** loop, the code is essentially computing the digits of the given expression. At each step, 14 digits are printed and
+this process is repeated until 200 digits are printed. 
+
+#### SOURCE:
+
+[Program to find value of PI](https://crypto.stanford.edu/pbc/notes/pi/code.html "PI")
