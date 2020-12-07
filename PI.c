@@ -1,34 +1,33 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h> 
+    int main() { 
 
-double calc1(int num1)
-{
-    return (16/(num1 * pow(5.0,num1 * 1.0)));
-}
-double calc2(int num1)
-{
-    return (4/(num1 * pow(239.0,num1 * 1.0)));
-}
-void main(){
-    int limit = 1000; 
-    int j = 0; 
-    double ans1 = 0.0;
-    double ans2 = 0.0;
-    double ans3 = 0; 
-    int flag = 1; 
-    for(j = 1; j <= limit ; j+= 2){
-       if(flag == 1){
-           ans1 += calc1(j);
-           ans2 += calc2(j);
-           flag = 0;
-       } else{
-           ans1 -= calc1(j);
-           ans2 -= calc2(j);
-           flag = 1;
-       }
-       /*printf("%lf  ",ans1);*/
-       /*printf("%lf  ",ans2);*/
+    int r[2800 + 1]; 
+    int i, k; 
+    int b, d; 
+    int c = 0; 
+    
+    for (i = 0; i < 2800; i++) { 
+    
+    r[i] = 2000; 
+    
+    } 
+        for (k = 2800; k > 0; k -= 14) { 
+        
+        d = 0; i = k; 
+            
+            for (;;) { 
+            d += r[i] * 10000; 
+            b = 2 * i - 1; 
+            r[i] = d % b; d /= b; i--; 
+            if (i == 0) break; d *= i; 
+            
+            } 
+    
+        printf("%.4d", c + d / 10000); 
+        c = d % 10000; 
+    
+        } 
+    
+    return 0; 
+    
     }
-    ans3 = ans1 - ans2;
-    printf("The value of pi = %1.100lfn", ans3);
-}
