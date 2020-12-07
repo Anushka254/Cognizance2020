@@ -2,7 +2,7 @@
 
 #### AIM: 
 
->To find the value of PI upto 800 decimal places.
+>To find the value of PI upto 200 decimal places.
 
 #### WHAT IS PI?
 
@@ -46,7 +46,7 @@ According to  Beeler et al., the value of PI is given by:
 
 ![Capture](https://user-images.githubusercontent.com/75233364/101364514-a9e67700-38c8-11eb-9b6d-581a7556ed62.PNG)
 
-During the first iteration of the 
+During the iteration of the 
 ***k***
  loop, the code is essentially computing the digits of the given expression. 
  
